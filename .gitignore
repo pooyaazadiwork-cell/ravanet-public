@@ -1,0 +1,37 @@
+# Dependencies and package-manager state
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Production, test, and local transfer output
+dist/
+build/
+coverage/
+downloads/
+*.tsbuildinfo
+
+# Local environment files (the documented template stays tracked)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local tool and preview state
+.arena/
+.vite/
+.cache/
