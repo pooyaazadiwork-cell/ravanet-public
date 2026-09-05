@@ -1,0 +1,84 @@
+/* RAVANET — Palette 05 / Modern UI
+   Background #0D0D0D · Surface #303030 · Accent #B7FF00 · Text #D8D8D8 */
+:root{
+  --ink:#0D0D0D;
+  --canvas:#0D0D0D;
+  --surface:#303030;
+  --surface-2:#303030;
+  --cream:#D8D8D8;
+  --mist:rgba(216,216,216,.66);
+  --jewel:#B7FF00;
+  --jade:#D8D8D8;
+  --lime:#B7FF00;
+  --line:rgba(216,216,216,.12);
+}
+body{background:#0D0D0D;color:#D8D8D8}
+::selection{background:#B7FF00;color:#0D0D0D}
+
+/* Website */
+.site-header{border-bottom-color:rgba(216,216,216,.08)}
+.desktop-nav,.world-link{color:rgba(216,216,216,.66)}
+.desktop-nav a:hover,.world-link:hover{color:#B7FF00}
+.hero{background:#0D0D0D}
+/* Keep the supplied brain loop in its original color; only the hero canvas stays dark. */
+.hero-video{filter:none!important}
+.hero-shade{background:linear-gradient(90deg,rgba(13,13,13,.1),rgba(13,13,13,.24) 38%,rgba(13,13,13,.9) 78%,#0D0D0D 100%),linear-gradient(0deg,rgba(13,13,13,.8),transparent 44%,rgba(13,13,13,.34))}
+.hero-content>p{color:rgba(216,216,216,.68)}
+.hero h1 em,.section-heading h2 em,.reminder-content h2 em,.final-section h2 em,.ro-copy h2 em{color:#D8D8D8!important;background:none!important;-webkit-text-fill-color:initial}
+.eyebrow,.section-kicker{color:rgba(216,216,216,.78)}
+.eyebrow span,.section-kicker>span{background:#B7FF00;box-shadow:0 0 16px rgba(183,255,0,.38)}
+.primary-button{background:#B7FF00;color:#0D0D0D}
+.primary-button .button-icon{background:#0D0D0D;color:#D8D8D8}
+.primary-button:hover{box-shadow:0 12px 30px rgba(183,255,0,.14)}
+.text-link,.inline-cta{color:rgba(216,216,216,.76)}
+.text-link:hover,.inline-cta:hover{color:#B7FF00;border-color:#B7FF00}
+.hero-foot span,.scroll-hint{color:rgba(216,216,216,.54)}
+.marquee{background:#B7FF00;color:#0D0D0D}.marquee i{background:#0D0D0D}
+.signs-section,.services-section,.path-section{background:#0D0D0D}
+.reminder-section,.explore-section,.ro-intro-section{background:#111111}
+.view-section,.final-section{background:#0D0D0D}
+.section-heading>p,.path-head>p,.sign-row p,.explore-card p,.ro-copy>p,.final-section>p{color:rgba(216,216,216,.64)}
+.sign-row,.service-row,.path-section,.final-section,.explore-grid,.sign-list,.service-grid{border-color:rgba(216,216,216,.12)}
+.sign-number,.service-row>span,.card-index,.path-step>span{color:rgba(216,216,216,.4)}
+.sign-row:hover,.service-row:hover{background:rgba(216,216,216,.035)}
+.sign-row:hover h3,.service-row:hover strong{color:#D8D8D8}
+.sign-row:hover .sign-number,.sign-row:hover .row-arrow,.service-row:hover svg{color:#B7FF00}
+.explore-card{background:#181818!important}.explore-card:first-child{border-color:rgba(216,216,216,.12)}.explore-card>svg,.explore-card button{color:#B7FF00}
+.view-visual .human-circle,.view-visual .care-circle{background:#181818;border-color:rgba(216,216,216,.16)}
+.human-head,.human-body{background:#D8D8D8}.care-circle{color:#B7FF00}.connection-line{background:rgba(216,216,216,.2)}.connection-line i{background:#B7FF00}
+.values span{color:#D8D8D8;border-color:rgba(216,216,216,.12)}.values span:hover{color:#B7FF00}
+.step-dot{background:#0D0D0D;color:#B7FF00;border-color:rgba(183,255,0,.48)}
+.path-step p{color:rgba(216,216,216,.6)}
+.ro-intro-card{background:radial-gradient(circle at 20% 50%,rgba(183,255,0,.055),transparent 45%),#181818;border-color:rgba(216,216,216,.13)}
+.ro-boundary{color:rgba(216,216,216,.74)}
+.ro-stage::before{background:radial-gradient(circle,rgba(183,255,0,.05),transparent 68%)}
+.stage-glow{background:radial-gradient(circle at 50% 47%,rgba(183,255,0,.12),rgba(216,216,216,.022) 43%,transparent 70%);opacity:1}.stage-glow::before{border-color:rgba(216,216,216,.06)}.stage-glow::after{background:rgba(183,255,0,.46);box-shadow:0 0 34px rgba(183,255,0,.32)}
+.floating-word{color:rgba(216,216,216,.58);border-color:#B7FF00}
+.ro-stage-character::before{border-color:rgba(183,255,0,.24)}.ro-stage-character::after{border-color:rgba(216,216,216,.13)}
+.ro-stage-orbit{border-color:rgba(216,216,216,.27);box-shadow:inset 0 0 18px rgba(183,255,0,.025),0 0 10px rgba(183,255,0,.025)}.ro-stage-orbit--primary-back,.ro-stage-orbit--front{border-color:rgba(216,216,216,.4)}.ro-stage-orbit i{background:#B7FF00;box-shadow:0 0 0 4px rgba(183,255,0,.08),0 0 18px rgba(183,255,0,.7)}
+.ro-stage-character .original-ro-face{filter:drop-shadow(0 18px 34px rgba(0,0,0,.42)) drop-shadow(0 0 22px rgba(183,255,0,.11))}.ro-stage-character:hover .original-ro-face{filter:drop-shadow(0 20px 38px rgba(0,0,0,.48)) drop-shadow(0 0 27px rgba(183,255,0,.2))}.ro-stage-character:focus-visible::before{border-color:#B7FF00;box-shadow:0 0 0 5px rgba(183,255,0,.08),0 0 26px rgba(183,255,0,.17)}
+.ro-ring{border-color:rgba(183,255,0,.32)}.ring-two{border-color:rgba(216,216,216,.24)}.ro-face{background:radial-gradient(circle at 35% 30%,#303030,#0D0D0D 72%)}.ro-face i{background:#B7FF00;box-shadow:0 0 9px rgba(183,255,0,.7)}
+footer{background:#0D0D0D;border-color:rgba(216,216,216,.12)}.footer-main p,.footer-links{color:rgba(216,216,216,.6)}
+
+/* Website chat */
+.chat-panel{background:#111111;border-color:rgba(216,216,216,.13)}
+.chat-header,.chat-composer,.chat-trust,.save-invite{border-color:rgba(216,216,216,.13)}
+.chat-trust{background:rgba(216,216,216,.035);color:rgba(216,216,216,.7)}
+.message-bubble{background:#303030;color:#D8D8D8}.message.user .message-bubble{background:#B7FF00;color:#0D0D0D}
+.starter-prompts button{border-color:rgba(216,216,216,.18);color:#D8D8D8}.starter-prompts button:hover{color:#B7FF00;border-color:#B7FF00}
+.chat-composer{background:#1A1A1A}.send-button{background:#B7FF00!important;color:#0D0D0D!important}
+.save-invite{background:#181818}.save-invite>svg{color:#B7FF00}.save-invite>button{background:#B7FF00;color:#0D0D0D}
+.onboarding-icon{color:#B7FF00;border-color:rgba(183,255,0,.3);background:rgba(183,255,0,.04)}
+.onboarding-card label input,.memory-choice{background:#181818;border-color:rgba(216,216,216,.14);color:#D8D8D8}
+.memory-choice.selected{background:#303030;border-color:rgba(183,255,0,.5)}
+
+/* Original Ro widget recolored without changing its behavior */
+.original-ro-panel{background:rgba(13,13,13,.92);border-color:rgba(216,216,216,.14);box-shadow:0 24px 65px rgba(0,0,0,.62),0 0 0 1px rgba(183,255,0,.05)}
+.original-ro-panel>header,.original-ro-panel>form{border-color:rgba(216,216,216,.11)}.original-ro-panel>header strong,.original-ro-panel input{color:#D8D8D8}.original-ro-panel>header span{color:rgba(216,216,216,.6)}
+.original-ro-message--ro p{background:#303030;color:#D8D8D8;border-color:rgba(216,216,216,.08)}.original-ro-message--user p{background:#B7FF00;color:#0D0D0D}
+.original-ro-panel>form>div{background:#181818;border-color:rgba(216,216,216,.14)}.original-ro-panel>form>div:focus-within{border-color:#B7FF00;box-shadow:0 0 0 2px rgba(183,255,0,.12)}.original-ro-panel form button{background:#B7FF00;color:#0D0D0D}
+.original-ro-shell{stroke:#B7FF00!important}.original-ro-face [id^="ro-face-"] stop:first-child{stop-color:#303030}.original-ro-face [id^="ro-face-"] stop:last-child{stop-color:#0D0D0D}.original-ro-eyes ellipse,.original-ro-thinking circle{fill:#B7FF00!important}
+.original-ro-launcher{filter:drop-shadow(0 10px 18px rgba(0,0,0,.58)) drop-shadow(0 0 14px rgba(183,255,0,.18))}
+
+/* Mobile */
+.mobile-menu{background:#0D0D0D!important;border-color:rgba(216,216,216,.14)!important}.mobile-menu-label,.mobile-menu-note{color:rgba(216,216,216,.55)}.mobile-menu a{color:#D8D8D8;border-color:rgba(216,216,216,.12)}.mobile-world-button{background:#B7FF00!important;color:#0D0D0D!important}

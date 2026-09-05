@@ -1,0 +1,70 @@
+/* Curated public-site interactions — hero media remains static. */
+:root{
+  --ui-ease:cubic-bezier(.22,1,.36,1);
+  --ui-standard:cubic-bezier(.2,0,0,1);
+  --ui-fast:180ms;
+  --ui-medium:280ms;
+  --ui-panel:420ms;
+}
+
+/* Navigation */
+.desktop-nav a,.world-link,.mobile-menu a{
+  transition:color var(--ui-fast) ease,background-color var(--ui-fast) ease,border-color var(--ui-fast) ease,box-shadow var(--ui-medium) ease,opacity var(--ui-fast) ease;
+}
+.desktop-nav a{position:relative}
+.desktop-nav a::after{content:"";position:absolute;right:0;bottom:5px;width:100%;height:1px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform var(--ui-medium) var(--ui-ease)}
+.desktop-nav a:hover::after{transform:scaleX(1);transform-origin:right}
+.brand-logo img{transition:filter var(--ui-medium) ease,opacity var(--ui-fast) ease}
+.brand-logo:hover img{filter:drop-shadow(0 0 10px rgba(199,255,85,.12))}
+
+/* Calls to action */
+.primary-button,.inline-cta,.text-link{
+  transition:background-color var(--ui-fast) ease,color var(--ui-fast) ease,border-color var(--ui-fast) ease,box-shadow var(--ui-medium) ease,transform var(--ui-fast) var(--ui-standard);
+}
+.primary-button .button-icon,.primary-button svg,.inline-cta svg,.text-link svg{transition:transform var(--ui-medium) var(--ui-ease)}
+.primary-button:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(199,255,85,.14)}
+.primary-button:hover .button-icon{transform:translateX(-3px)}
+.primary-button:active{transform:scale(.985)}
+.inline-cta:hover svg,.text-link:hover svg{transform:translateX(-3px)}
+
+/* Public story rows and cards */
+.sign-row,.service-row,.explore-card{transition:background-color var(--ui-fast) ease,border-color var(--ui-medium) ease,box-shadow var(--ui-medium) ease}
+.sign-row h3,.sign-row .sign-number,.sign-row .row-arrow,.service-row strong,.service-row svg,.explore-card>svg{transition:color var(--ui-fast) ease,transform var(--ui-medium) var(--ui-ease),opacity var(--ui-fast) ease}
+.sign-row:hover .row-arrow,.service-row:hover svg{transform:translateX(-4px)}
+.sign-row:hover .sign-number{color:var(--lime)}
+.service-row:hover,.sign-row:hover{background-color:rgba(181,243,201,.025)}
+.explore-card:hover{border-color:rgba(199,255,85,.16)}
+.explore-card:hover>svg{transform:translateY(-2px)}
+
+/* Mobile menu */
+.mobile-menu{animation:menuIn 190ms var(--ui-ease) both}
+.mobile-menu-scrim{animation:fadeIn 160ms ease both}
+
+/* Guided chat and registration */
+.chat-backdrop{transition:opacity 220ms ease,visibility 220ms ease}
+.chat-panel{transition:transform var(--ui-panel) var(--ui-ease),box-shadow var(--ui-medium) ease}
+.chat-header>button,.starter-prompts button,.memory-choice{transition:background-color var(--ui-fast) ease,border-color var(--ui-fast) ease,color var(--ui-fast) ease,transform var(--ui-fast) var(--ui-standard)}
+.chat-header>button:hover{background:rgba(255,255,255,.08);border-color:rgba(199,255,85,.24)}
+.starter-prompts button:hover{background:rgba(199,255,85,.05);border-color:rgba(199,255,85,.45)}
+.chat-composer{transition:border-color var(--ui-fast) ease,background-color var(--ui-fast) ease,box-shadow var(--ui-fast) ease}
+.chat-composer:focus-within{box-shadow:0 0 0 3px rgba(199,255,85,.04)}
+.send-button{transition:background-color var(--ui-fast) ease,opacity var(--ui-fast) ease,transform var(--ui-fast) var(--ui-standard)}
+.send-button:active{transform:scale(.94)}
+.message{animation:messageIn 190ms var(--ui-ease) both}
+.save-invite,.onboarding-card,.done-state{animation:softIn 220ms var(--ui-ease) both}
+.onboarding-progress span{transition:width 280ms var(--ui-ease)}
+.typing-dots i{animation:typing 1.2s infinite}
+
+/* Stable decorative illustrations */
+.connection-line i{animation:none!important;opacity:.75}
+.connection-line i:nth-child(1){left:0}.connection-line i:nth-child(2){left:50%}.connection-line i:nth-child(3){left:100%}
+.reminder-orb{animation:none!important}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes menuIn{from{opacity:0;transform:translateY(-6px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes messageIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@keyframes softIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}

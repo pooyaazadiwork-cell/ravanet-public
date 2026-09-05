@@ -1,0 +1,29 @@
+RAVANET — COLOR PALETTES
+
+Palette 01 — Dark Premium #0A0A0A — Deep Black #1A1A1A — Dark Gray
+#B7FF00 — Ravanet Lime (Fixed) #F5F5F5 — Soft White
+
+Palette 02 — Graphite #111111 — Charcoal #2A2A2A — Graphite #B7FF00 —
+Ravanet Lime (Fixed) #EAEAEA — Light Gray
+
+Palette 03 — Soft Black #161616 — Soft Black #383838 — Dark Gray #B7FF00
+— Ravanet Lime (Fixed) #FFFFFF — Pure White
+
+Palette 04 — High Contrast #000000 — Pure Black #202020 — Deep Gray
+#B7FF00 — Ravanet Lime (Fixed) #FFFFFF — Pure White
+
+Palette 05 — Modern UI — SELECTED #0D0D0D — Background / Deep Black
+#303030 — Cards / Dark Gray #B7FF00 — Primary Accent / Ravanet Lime
+(Fixed) #D8D8D8 — Light Gray / Secondary Text
+
+Palette 06 — Minimal Luxury #080808 — Minimal Black #181818 — Dark
+Surface #B7FF00 — Ravanet Lime (Fixed) #FAFAFA — Soft White
+
+RAVANET CORE PALETTE — FINAL
+
+Primary Background: #0D0D0D Secondary Surface: #303030 Primary Accent:
+#B7FF00 Light Text / Elements: #D8D8D8
+
+Recommended UI Usage: Background → #0D0D0D Cards / Secondary Background
+→ #303030 CTA / Accent / Interactive → #B7FF00 Secondary Text / Light
+Elements → #D8D8D8
